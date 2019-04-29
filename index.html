@@ -7,9 +7,12 @@
 </head>
 <body>
 	<main>
-		<!-- status bar -->
-		<div class="status"></div>
-		<div class="container">
+		<div class="container"> <!-- all grid elements live within -->
+			<!-- status bar -->
+			<div class="status">
+				<p>EMAR is talking/listening</p>
+			</div>
+
 			<!-- prompts -->
 			<div class="introSection">
 				<h2>Intro</h2>
@@ -19,7 +22,7 @@
 			<div class="emaSection">
 				<h2>Momentary</h2>
 				<button id="c1" class="emaQs">Can you tell me, how stressed do you feel right now?</button>
-				<button id="d1" class="emaQs">what is your mood right now?</button>
+				<button id="d1" class="emaQs">What is your mood right now?</button>
 			</div>
 			<div class="stressSection">
 				<h2>Stress Story</h2>
@@ -57,6 +60,17 @@
 				<button id="1" class="response">I see.</button>
 				<button id="1" class="response">Oh.</button>
 			</div>
+
+			<footer>
+				<form>
+					<span class="start">
+						<input type="" name="">
+						<input type="" name="">
+						<button id="startSession" class="sessionBtn"></button>
+					</span>
+					<button id="endSession" class="sessionBtn"></button>
+				</form>
+			</footer>
 		</div> <!-- /container -->
 	</main>
 </body>

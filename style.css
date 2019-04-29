@@ -27,24 +27,42 @@ body {
 	background: #fff;
 }
 
-.status {
-	height: 100px;
-	background-color: red;
+h1 {
+	font-size: 24px;
+	font-weight: 700;
 }
 
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+}
 
 /* Grid layout and assignments */
 .container {
 	display: grid;
-	grid-template-areas: 	"introSection emaSection stressSection exitSection"
+	height: 100vh;
+	padding: 0 auto;
+	grid-template-areas:	"statusBar statusBar statusBar	statusBar"
+						 	"introSection emaSection stressSection exitSection"
 							". emaResponses storyResponses ."
-							"responseBar responseBar responseBar responseBar";
+							"responseBar responseBar responseBar responseBar"
+							"footer footer footer footer";
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 100px;
+	grid-template-rows: 60px 1.1fr 0.9fr 60px 100px;
 }
 
-.container div {
-	margin: 0 auto;
+.introSection, .emaSection, .stressSection, .exitSection, .emaResponses, .storyResponses  {
+	display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.status {
+	grid-area: statusBar;
+	background-color: red;
+	width: 100%;
+	color: #fff;
+
 }
 
 .introSection {
@@ -73,29 +91,41 @@ body {
 
 .responseBar {
 	grid-area: responseBar;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+footer {
+	grid-area: footer;
+
 }
 
 
 /*Basic buttons set up*/
 button {
-	max-width: 80%;
+/*	max-width: 80%;*/
 	padding:1em 1.45em;
-	margin:0.5em;
+	margin:0.5em 0;
 	border:0.15em solid #CCCCCC;
 	box-sizing: border-box;
 	text-decoration:none;
 	font-weight:400;
+	font-size: 12px;
 	color:#000000;
 	background-color:#CCCCCC;
 	text-align:center;
 	position:relative;
 }
 
-button:hover{
- border-color:#7a7a7a;
+button:hover {
+	border-color:#7a7a7a;
 }
-button:active{
- background-color:#999999;
+button:active {
+	background-color:#999999;
+}
+button:focus {
+	outline:0;
 }
 @media all and (max-width:30em){
  button{
