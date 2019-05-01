@@ -96,6 +96,7 @@ h2 {
 	justify-content: space-evenly;
 }
 
+/*Footer needs to be styled! Spans and buttons set up in HTML but not ID'd or pulled into a function*/
 footer {
 	grid-area: footer;
 
