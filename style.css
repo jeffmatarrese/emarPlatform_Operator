@@ -102,7 +102,7 @@ footer {
 }
 
 
-/*Basic buttons set up*/
+/* BUTTONS!!! */
 button {
 /*	max-width: 80%;*/
 	padding:1em 1.45em;
@@ -126,6 +126,9 @@ button:active {
 }
 button:focus {
 	outline:0;
+}
+button:visited {
+	background-color: pink;
 }
 @media all and (max-width:30em){
  button{
