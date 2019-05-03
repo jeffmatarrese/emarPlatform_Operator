@@ -1,5 +1,94 @@
 // audio file references here?
 
 [{
-
-}]
+	"title": "a1",
+	"src": "Hello-MyNameisEMAR.wav",
+},
+{
+	"title": "b1",
+	"src": "ItsNiceToMeetYou.wav",
+},
+{
+	"title": "c1",
+	"src": "HowStressedRightNow.mp3",
+},
+{
+	"title": "d1",
+	"src": "WhatisYourMood.wav",
+},
+{
+	"title": "e1",
+	"src": "ThankYou-StressStories.wav",
+},
+{
+	"title": "f1",
+	"src": "Great-ImListening.wav",
+},
+{
+	"title": "g1",
+	"src": "DoYouWantToTellMeMore.wav",
+},
+{
+	"title": "h1",
+	"src": "HowDidThatMakeYouFeel.wav",
+},
+{
+	"title": "j1",
+	"src": "ThankYouStory.wav",
+},
+{
+	"title": "k1",
+	"src": "LikedHearingHowYourDoing.wav",
+},
+{
+	"title": "m1",
+	"src": "ItWasNiceMeetingYou-Bye.wav",
+},
+{
+	"title": "c3",
+	"src": "ThatsGreattoHear.wav",
+},
+{
+	"title": "c4",
+	"src": "ThanksforSharing.wav",
+},
+{
+	"title": "c5",
+	"src": "ImSorryToHearThat.wav",
+},
+{
+	"title": "f2",
+	"src": "ThatSoundsDifficult.wav",
+},
+{
+	"title": "f3",
+	"src": "ThatSoundsStressful.wav",
+},
+{
+	"title": "f4",
+	"src": "ICanUnderstandWhyYoureStressed.wav",
+},
+{
+	"title": "d2",
+	"src": "ImSorryDidntHearThat.wav",
+},
+{
+	"title": "d3",
+	"src": "CanYouRepeatThat.wav",
+},
+{
+	"title": "b3",
+	"src": "ComeFindMeLater.wav",
+},
+{
+	"title": "h2",
+	"src": "Yes.wav",
+},
+{
+	"title": "h3",
+	"src": "I-See.wav",
+},
+{
+	"title": "h4",
+	"src": "Oh.wav",
+},]

@@ -11,7 +11,7 @@
 		<div class="container"> <!-- all grid elements live within -->
 			<!-- status bar -->
 			<div class="status">
-				<p>EMAR is talking/listening</p>
+				<h1>EMAR v4 Teleoperator</h1>
 			</div>
 
 			<!-- prompts -->
@@ -56,17 +56,19 @@
 				<button id="d2" class="response">I'm sorry, I didn't hear that.</button>
 				<button id="d3" class="response">Could you repeat that?</button>
 				<!-- <button id="1" class="response">Sorry.</button>  does not exist?-->
-				<button id="b3" class="response">That's okay. Come find me later if you feel like talking.</button>
+				<button id="b3" class="response">Come find me later if you feel like talking.</button>
 				<button id="h2" class="response">Yes.</button>
 				<button id="h3" class="response">I see.</button>
 				<button id="h4" class="response">Oh.</button>
 			</div>
 
 			<footer>
-				<form>
+				<form class="sessionInfo">
 					<span class="start">
-						<input type="" name="">
-						<input type="" name="">
+						<label for="researcher">Researcher:</label>
+						<input type="text" name="researcher">
+						<label for="participantID">Participant ID:</label>
+						<input type="text" name="participantID">
 						<button id="startSession" class="sessionBtn">Start Session</button>
 					</span>
 					<button id="endSession" class="sessionBtn">End Session</button>

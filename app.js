@@ -30,40 +30,58 @@ var h2 = document.getElementById('h2');
 var h3 = document.getElementById('h3');
 var h4 = document.getElementById('h4');
 
-
-
-// a1.addEventListener(‘click’, playSound(add-location)) 
-function init(){
-		a1.addEventListener("click", playSound(a1));
-		b1.addEventListener("click", playSound(b1));
-		c1.addEventListener("click", playSound(c1));
-		d1.addEventListener("click", playSound(d1));
-		e1.addEventListener("click", playSound(e1));
-		f1.addEventListener("click", playSound(f1));
-		g1.addEventListener("click", playSound(g1));
-		h1.addEventListener("click", playSound(h1));
-		j1.addEventListener("click", playSound(j1));
-		k1.addEventListener("click", playSound(k1));
-		m1.addEventListener("click", playSound(m1));
-		c3.addEventListener("click", playSound(c3));
-		c4.addEventListener("click", playSound(c4));
-		c5.addEventListener("click", playSound(c5));
-		f2.addEventListener("click", playSound(f2));
-		f3.addEventListener("click", playSound(f3));
-		f4.addEventListener("click", playSound(f4));
-		d2.addEventListener("click", playSound(d2));
-		d3.addEventListener("click", playSound(d3));
-		b3.addEventListener("click", playSound(b3));
-		h2.addEventListener("click", playSound(h2));
-		h3.addEventListener("click", playSound(h3));
-		h4.addEventListener("click", playSound(h4));
-};
+var startSession = document.getElementById('startSession');
+var endSession = document.getElementById('endSession');
 
 init();
 
+// a1.addEventListener(‘click’, playSound(add-location)) 
+function init(){
+		// audio buttons
+		a1.addEventListener("click", playSound('Hello-MyNameisEMAR.wav'));
+		b1.addEventListener("click", playSound('ItsNiceToMeetYou.wav'));
+		c1.addEventListener("click", playSound('HowStressedRightNow.mp3'));
+		d1.addEventListener("click", playSound('WhatisYourMood.wav'));
+		e1.addEventListener("click", playSound('ThankYou-StressStories.wav'));
+		f1.addEventListener("click", playSound('Great-ImListening.wav'));
+		g1.addEventListener("click", playSound('DoYouWantToTellMeMore.wav'));
+		h1.addEventListener("click", playSound('HowDidThatMakeYouFeel.wav'));
+		j1.addEventListener("click", playSound('ThankYouStory.wav'));
+		k1.addEventListener("click", playSound('LikedHearingHowYourDoing.wav'));
+		m1.addEventListener("click", playSound('ItWasNiceMeetingYou-Bye.wav'));
+		c3.addEventListener("click", playSound('ThatsGreattoHear.wav'));
+		c4.addEventListener("click", playSound("ThanksforSharing.wav"));
+		c5.addEventListener("click", playSound("ImSorryToHearThat.wav"));
+		f2.addEventListener("click", playSound("ThatSoundsDifficult.wav"));
+		f3.addEventListener("click", playSound("ThatSoundsStressful.wav"));
+		f4.addEventListener("click", playSound("ICanUnderstandWhyYoureStressed.wav"));
+		d2.addEventListener("click", playSound("ImSorryDidntHearThat.wav"));
+		d3.addEventListener("click", playSound("CanYouRepeatThat.wav"));
+		b3.addEventListener("click", playSound("ComeFindMeLater.wav"));
+		h2.addEventListener("click", playSound("Yes.wav"));
+		h3.addEventListener("click", playSound("I-See.wav"));
+		h4.addEventListener("click", playSound("Oh.wav"));
+
+		// start stop buttons
+		startSession.addEventListener("click", start());
+		endSession.addEventListener("click", end());
+};
+
+function start(){
+	// pull data from two fields
+	// start new file
+	// save button clicks to file
+};
+
     
-// function playSound(location) {
-//       sound.src = ‘audio/dragon.mp3’ // have the location of the audio file here
-//       sound.play()
+function playSound(location) {
+      sound.src = "Assets/" + location;
+      sound.play();
+};
+
+function end(){
+	// save file
+}
+
 
 
