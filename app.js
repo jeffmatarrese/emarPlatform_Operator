@@ -1,39 +1,39 @@
 // get buttons and set up functions
-var sound = new Audio();
-// intro
-var a1 = document.getElementById('a1');
-var b1 = document.getElementById('b1');
-// EMA
-var c1 = document.getElementById('c1');
-var d1 = document.getElementById('d1');
-// stress story
-var e1 = document.getElementById('e1');
-var f1 = document.getElementById('f1');
-var g1 = document.getElementById('g1');
-var h1 = document.getElementById('h1');
-// exit
-var j1 = document.getElementById('j1');
-var k1 = document.getElementById('k1');
-var m1 = document.getElementById('m1');
-// responses
-var c3 = document.getElementById('c3');
-var c4 = document.getElementById('c4');
-var c5 = document.getElementById('c5');
-var f2 = document.getElementById('f2');
-var f3 = document.getElementById('f3');
-var f4 = document.getElementById('f4');
-// response bar
-var d2 = document.getElementById('d2');
-var d3 = document.getElementById('d3');
-var b3 = document.getElementById('b3');
-var h2 = document.getElementById('h2');
-var h3 = document.getElementById('h3');
-var h4 = document.getElementById('h4');
+// var sound = new Audio();
+// // intro
+// var a1 = document.getElementById('a1');
+// var b1 = document.getElementById('b1');
+// // EMA
+// var c1 = document.getElementById('c1');
+// var d1 = document.getElementById('d1');
+// // stress story
+// var e1 = document.getElementById('e1');
+// var f1 = document.getElementById('f1');
+// var g1 = document.getElementById('g1');
+// var h1 = document.getElementById('h1');
+// // exit
+// var j1 = document.getElementById('j1');
+// var k1 = document.getElementById('k1');
+// var m1 = document.getElementById('m1');
+// // responses
+// var c3 = document.getElementById('c3');
+// var c4 = document.getElementById('c4');
+// var c5 = document.getElementById('c5');
+// var f2 = document.getElementById('f2');
+// var f3 = document.getElementById('f3');
+// var f4 = document.getElementById('f4');
+// // response bar
+// var d2 = document.getElementById('d2');
+// var d3 = document.getElementById('d3');
+// var b3 = document.getElementById('b3');
+// var h2 = document.getElementById('h2');
+// var h3 = document.getElementById('h3');
+// var h4 = document.getElementById('h4');
 
 var startSession = document.getElementById('startSession');
 var endSession = document.getElementById('endSession');
 
-a1.addEventListener('click', playSound('Hello-MyNameisEMAR.wav'), console.log("a1 playing"));
+// a1.addEventListener('click', playSound('Hello-MyNameisEMAR.wav'), console.log("a1 playing"), false);
 // b1.addEventListener('click', playSound('ItsNiceToMeetYou.wav'));
 // c1.addEventListener('click', playSound('HowStressedRightNow.mp3'));
 // d1.addEventListener('click', playSound('WhatisYourMood.wav'));
@@ -62,10 +62,21 @@ startSession.addEventListener("click", record());
 endSession.addEventListener("click", end());
 
     
-function playSound(location) {
-      sound.src = "Assets/" + location;
-      sound.play();
-};
+// async function playSound(location) {
+// 	sound.pause();
+//     sound.src = "Assets/" + location;
+//     sound.play();
+// };
+
+// copied in from mdn to see if I can modify to match
+// async function playVideo() {
+//   try {
+//     await videoElem.play();
+//     playButton.className = "playing";
+//   } catch(err) {
+//     playButton.className = "";
+//   }
+// }
 
 function record(){
 	console.log("record function happening")

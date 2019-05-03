@@ -1,94 +1,94 @@
 // audio file references here?
 
 [{
-	"title": "a1",
+	"id": "audio_a1",
 	"src": "Hello-MyNameisEMAR.wav",
 },
 {
-	"title": "b1",
+	"id": "audio_b1",
 	"src": "ItsNiceToMeetYou.wav",
 },
 {
-	"title": "c1",
+	"id": "audio_c1",
 	"src": "HowStressedRightNow.mp3",
 },
 {
-	"title": "d1",
+	"id": "audio_d1",
 	"src": "WhatisYourMood.wav",
 },
 {
-	"title": "e1",
+	"id": "audio_e1",
 	"src": "ThankYou-StressStories.wav",
 },
 {
-	"title": "f1",
+	"id": "audio_f1",
 	"src": "Great-ImListening.wav",
 },
 {
-	"title": "g1",
+	"id": "audio_g1",
 	"src": "DoYouWantToTellMeMore.wav",
 },
 {
-	"title": "h1",
+	"id": "audio_h1",
 	"src": "HowDidThatMakeYouFeel.wav",
 },
 {
-	"title": "j1",
+	"id": "audio_j1",
 	"src": "ThankYouStory.wav",
 },
 {
-	"title": "k1",
+	"id": "audio_k1",
 	"src": "LikedHearingHowYourDoing.wav",
 },
 {
-	"title": "m1",
+	"id": "audio_m1",
 	"src": "ItWasNiceMeetingYou-Bye.wav",
 },
 {
-	"title": "c3",
+	"id": "audio_c3",
 	"src": "ThatsGreattoHear.wav",
 },
 {
-	"title": "c4",
+	"id": "audio_c4",
 	"src": "ThanksforSharing.wav",
 },
 {
-	"title": "c5",
+	"id": "audio_c5",
 	"src": "ImSorryToHearThat.wav",
 },
 {
-	"title": "f2",
+	"id": "audio_f2",
 	"src": "ThatSoundsDifficult.wav",
 },
 {
-	"title": "f3",
+	"id": "audio_f3",
 	"src": "ThatSoundsStressful.wav",
 },
 {
-	"title": "f4",
+	"id": "audio_f4",
 	"src": "ICanUnderstandWhyYoureStressed.wav",
 },
 {
-	"title": "d2",
+	"id": "audio_d2",
 	"src": "ImSorryDidntHearThat.wav",
 },
 {
-	"title": "d3",
+	"id": "audio_d3",
 	"src": "CanYouRepeatThat.wav",
 },
 {
-	"title": "b3",
+	"id": "audio_b3",
 	"src": "ComeFindMeLater.wav",
 },
 {
-	"title": "h2",
+	"id": "audio_h2",
 	"src": "Yes.wav",
 },
 {
-	"title": "h3",
+	"id": "audio_h3",
 	"src": "I-See.wav",
 },
 {
-	"title": "h4",
+	"id": "audio_h4",
 	"src": "Oh.wav",
 },]
