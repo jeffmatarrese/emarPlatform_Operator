@@ -33,50 +33,45 @@ var h4 = document.getElementById('h4');
 var startSession = document.getElementById('startSession');
 var endSession = document.getElementById('endSession');
 
-init();
+a1.addEventListener('click', playSound('Hello-MyNameisEMAR.wav'), console.log("a1 playing"));
+// b1.addEventListener('click', playSound('ItsNiceToMeetYou.wav'));
+// c1.addEventListener('click', playSound('HowStressedRightNow.mp3'));
+// d1.addEventListener('click', playSound('WhatisYourMood.wav'));
+// e1.addEventListener('click', playSound('ThankYou-StressStories.wav'));
+// f1.addEventListener('click', playSound('Great-ImListening.wav'));
+// g1.addEventListener('click', playSound('DoYouWantToTellMeMore.wav'));
+// h1.addEventListener('click', playSound('HowDidThatMakeYouFeel.wav'));
+// j1.addEventListener('click', playSound('ThankYouStory.wav'));
+// k1.addEventListener('click', playSound('LikedHearingHowYourDoing.wav'));
+// m1.addEventListener('click', playSound('ItWasNiceMeetingYou-Bye.wav'));
+// c3.addEventListener('click', playSound('ThatsGreattoHear.wav'));
+// c4.addEventListener('click', playSound('ThanksforSharing.wav'));
+// c5.addEventListener('click', playSound('ImSorryToHearThat.wav'));
+// f2.addEventListener('click', playSound('ThatSoundsDifficult.wav'));
+// f3.addEventListener('click', playSound('ThatSoundsStressful.wav'));
+// f4.addEventListener('click', playSound('ICanUnderstandWhyYoureStressed.wav'));
+// d2.addEventListener('click', playSound('ImSorryDidntHearThat.wav'));
+// d3.addEventListener('click', playSound('CanYouRepeatThat.wav'));
+// b3.addEventListener('click', playSound('ComeFindMeLater.wav'));
+// h2.addEventListener('click', playSound('Yes.wav'));
+// h3.addEventListener('click', playSound('I-See.wav'));
+// h4.addEventListener('click', playSound('Oh.wav'));
 
-function init(){
-		// audio buttons
-		a1.addEventListener('click', console.log("youclickedme!"));
-		// playSound('Hello-MyNameisEMAR.wav')
-		b1.addEventListener('click', playSound('ItsNiceToMeetYou.wav'));
-		c1.addEventListener('click', playSound('HowStressedRightNow.mp3'));
-		d1.addEventListener('click', playSound('WhatisYourMood.wav'));
-		e1.addEventListener('click', playSound('ThankYou-StressStories.wav'));
-		f1.addEventListener('click', playSound('Great-ImListening.wav'));
-		g1.addEventListener('click', playSound('DoYouWantToTellMeMore.wav'));
-		h1.addEventListener('click', playSound('HowDidThatMakeYouFeel.wav'));
-		j1.addEventListener('click', playSound('ThankYouStory.wav'));
-		k1.addEventListener('click', playSound('LikedHearingHowYourDoing.wav'));
-		m1.addEventListener('click', playSound('ItWasNiceMeetingYou-Bye.wav'));
-		c3.addEventListener('click', playSound('ThatsGreattoHear.wav'));
-		c4.addEventListener('click', playSound('ThanksforSharing.wav'));
-		c5.addEventListener('click', playSound('ImSorryToHearThat.wav'));
-		f2.addEventListener('click', playSound('ThatSoundsDifficult.wav'));
-		f3.addEventListener('click', playSound('ThatSoundsStressful.wav'));
-		f4.addEventListener('click', playSound('ICanUnderstandWhyYoureStressed.wav'));
-		d2.addEventListener('click', playSound('ImSorryDidntHearThat.wav'));
-		d3.addEventListener('click', playSound('CanYouRepeatThat.wav'));
-		b3.addEventListener('click', playSound('ComeFindMeLater.wav'));
-		h2.addEventListener('click', playSound('Yes.wav'));
-		h3.addEventListener('click', playSound('I-See.wav'));
-		h4.addEventListener('click', playSound('Oh.wav'));
+// start stop buttons
+startSession.addEventListener("click", record());
+endSession.addEventListener("click", end());
 
-		// start stop buttons
-		startSession.addEventListener("click", start());
-		endSession.addEventListener("click", end());
+    
+function playSound(location) {
+      sound.src = "Assets/" + location;
+      sound.play();
 };
 
-function start(){
+function record(){
+	console.log("record function happening")
 	// pull data from two fields
 	// start new file
 	// save button clicks to file
-};
-
-    
-async function playSound(location) {
-      sound.src = "Assets/" + location;
-      sound.play();
 };
 
 function end(){

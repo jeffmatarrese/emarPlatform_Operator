@@ -107,6 +107,7 @@ h2 {
 /*Footer needs to be styled! Spans and buttons set up in HTML but not ID'd or pulled into a function*/
 footer {
 	grid-area: footer;
+	background-color: #ccc;
 
 }
 
@@ -142,8 +143,7 @@ button {
 /*	max-width: 80%;*/
 	padding:1em 1.45em;
 	margin:0.5em 0;
-	border:0.15em solid #fff;
-	box-sizing: border-box;
+	border:0;
 	text-decoration:none;
 	font-weight:400;
 	font-size: 12px;
@@ -154,16 +154,13 @@ button {
 }
 
 button:hover {
-	border-color:#7a7a7a;
+	background-color:#ffafaf;
 }
 button:active {
 	background-color:#999999;
 }
 button:focus {
 	outline:0;
-}
-button:visited {
-	background-color: pink;
 }
 @media all and (max-width:30em){
  button{
