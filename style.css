@@ -44,11 +44,12 @@ h2 {
 	padding: 0 auto;
 	grid-template-areas:	"statusBar statusBar statusBar	statusBar"
 						 	"introSection emaSection stressSection exitSection"
+						 	"responseBreak responseBreak responseBreak responseBreak"
 							". emaResponses storyResponses ."
 							"responseBar responseBar responseBar responseBar"
 							"footer footer footer footer";
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 60px 1.1fr 0.9fr 60px 100px;
+	grid-template-rows: 60px 1.1fr 40px 0.7fr 60px 150px;
 }
 
 .introSection, .emaSection, .stressSection, .exitSection, .emaResponses, .storyResponses  {
@@ -61,8 +62,8 @@ h2 {
 	grid-area: statusBar;
 	width: 100%;
 	color: #000;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	padding-top: 20px;
 
 }
 
@@ -80,6 +81,12 @@ h2 {
 
 .exitSection {
 	grid-area: exitSection;
+}
+
+.responseBreak {
+	grid-area: responseBreak;
+	width: 100%;
+	text-align: center;
 }
 
 .emaResponses {
@@ -103,19 +110,45 @@ footer {
 
 }
 
+.highlightSection {
+	background-color: #DED5E8;
+}
 
 /* BUTTONS!!! */
+button.intro {
+	background-color: #FCF1E3;
+}
+
+button.emaQs, button.stressStory, button.exit, button#startSession  {
+	background-color: #E3EFFC;
+}
+
+button.story_response, button.response {
+	background-color: #F0E3FC;
+}
+
+button.ema_response {
+	background-color: #6A6FE5;
+	color: #fff;
+}
+
+button#endSession {
+	background-color: #DA1111;
+	color: #fff;
+	/*display: hidden;*/
+}
+
 button {
 /*	max-width: 80%;*/
 	padding:1em 1.45em;
 	margin:0.5em 0;
-	border:0.15em solid #CCCCCC;
+	border:0.15em solid #fff;
 	box-sizing: border-box;
 	text-decoration:none;
 	font-weight:400;
 	font-size: 12px;
 	color:#000000;
-	background-color:#CCCCCC;
+/*	background-color:#CCCCCC;*/
 	text-align:center;
 	position:relative;
 }
@@ -138,6 +171,9 @@ button:visited {
   margin:0.5em auto;
  }
 
+
+
+/* OTHER PAGE STUFF */
 label {
 	/*font-size: 14px; trying to size these down and it's not seeming to work*/
 }
